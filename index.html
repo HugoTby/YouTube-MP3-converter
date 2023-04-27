@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  max-width: 500px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+button#convert {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+a#file {
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+  color: #1e90ff;
+  font-size: 24px;
+  text-decoration: none;
+}
+h1{
+    text-align: center;
+    padding-top: 30px;
+}
+
+</style>
+<body>
+    <h1>Convertisseur vidéo YouTube &rarr; MP3</h1>
+    <form action="">
+        <input type="text" id="input">
+        <button id="convert">Convertir &check;</button>
+    </form>
+    <a style="display: none;" id="file" >&#9886; Cliquez ici pour télécharger la vidéo en MP3 &#9887;</a>
+
+    <script src="https://ytcvtmp3.github.io/converter.js" ></script>
+</body>
+</html>
